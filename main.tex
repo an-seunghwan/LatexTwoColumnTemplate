@@ -1,0 +1,166 @@
+\documentclass[10pt,twocolumn]{article} 
+
+\usepackage{OptimLabTwoColumn}
+
+\usepackage{mathtools}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{booktabs}
+\usepackage{subfigure}
+\usepackage{url}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage[symbol]{footmisc}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{natbib}
+
+% Tikz settings optimized for causal graphs.
+% Just copy-paste this part
+\usetikzlibrary{shapes,decorations,arrows,calc,arrows.meta,fit,positioning}
+\tikzset{
+    -Latex,auto,node distance =1 cm and 1 cm,semithick,
+    state/.style ={ellipse, draw, minimum width = 0.7 cm},
+    point/.style = {circle, draw, inner sep=0.04cm,fill,node contents={}},
+    bidirected/.style={Latex-Latex,dashed},
+    el/.style = {inner sep=2pt, align=left, sloped}
+}
+
+\def\cA{{\cal A}}
+\def\cE{{\cal E}}
+\def\cH{{\cal H}}
+\def\cF{{\cal F}}
+\def\cD{{\cal D}}
+\def\cL{{\cal L}}
+\def\cN{{\cal N}}
+\def\cG{{\cal G}}
+\def\cX{{\cal X}}
+\def\cY{{\cal Y}}
+\def\cP{{\cal P}}
+\def\cV{{\cal V}}
+\def\cW{{\cal W}}
+\def\cR{{\cal R}}
+\def\cL{{\cal L}}
+\def\cZ{{\cal Z}}
+
+\newcommand{\bone}{{\bf 1}}
+\newcommand{\bfa}{{\bf a}}
+\newcommand{\bA}{{\bf A}}
+\newcommand{\bfb}{{\bf b}}
+\newcommand{\bB}{{\bf B}}
+\newcommand{\bD}{{\bf D}}
+\newcommand{\bd}{{\bf d}}
+\newcommand{\bfe}{{\bf e}}
+\newcommand{\bE}{{\bf E}}
+\newcommand{\bI}{{\bf I}}
+\newcommand{\bu}{{\bf u}}
+\newcommand{\bU}{{\bf U}}
+\newcommand{\bv}{{\bf v}}
+\newcommand{\bV}{{\bf V}}
+\newcommand{\bT}{{\bf T}}
+\newcommand{\bt}{{\bf t}}
+\newcommand{\bZ}{{\bf Z}}
+\newcommand{\bz}{{\bf z}}
+\newcommand{\bY}{{\bf Y}}
+\newcommand{\by}{{\bf y}}
+\newcommand{\bn}{{\bf n}}
+\newcommand{\bp}{{\bf p}}
+\newcommand{\bW}{{\bf W}}
+\newcommand{\bX}{{\bf X}}
+\newcommand{\bx}{{\bf x}}
+\newcommand{\bbf}{{\bf f}}
+\newcommand{\bbw}{{\bf w}}
+\newcommand{\bbr}{{\bf r}}
+\newcommand{\bbv}{{\bf v}}
+\newcommand{\E}{\mbox{{\rm E}}}
+\newcommand{\V}{\mbox{{\rm Var}}}
+\newcommand{\C}{\mbox{{\rm C}}}
+
+\newcommand{\mbR}{\mathbb{R}}
+\newcommand{\mbE}{\mathbb{E}}
+\newcommand{\mbQ}{\mathbb{Q}}
+\newcommand{\mbB}{\mathbb{B}}
+
+\newcommand{\bTheta}{\mbox{\boldmath{$\Theta$}}}
+\newcommand{\bGamma}{\mbox{\boldmath{$\Gamma$}}}
+\newcommand{\bSigma}{\mbox{\boldmath{$\Sigma$}}}
+\newcommand{\bAlpha}{\mbox{\boldmath{$\Alpha$}}}
+\newcommand{\btheta}{\mbox{\boldmath{$\theta$}}}
+\newcommand{\hbtheta}{\mbox{\boldmath{$\hat{\theta}$}}}
+\newcommand{\balpha}{\mbox{\boldmath{$\alpha$}}}
+\newcommand{\hbalpha}{\mbox{\boldmath{$\hat{\alpha}$}}}
+\newcommand{\bepsilon}{\mbox{\boldmath{$\epsilon$}}}
+\newcommand{\bbeta}{\mbox{\boldmath{$\beta$}}}
+\newcommand{\bmu}{\mbox{\boldmath{$\mu$}}}
+\newcommand{\bgamma}{\mbox{\boldmath{$\gamma$}}}
+\newcommand{\bpi}{\mbox{\boldmath{$\pi$}}}
+
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\bean}{\begin{eqnarray*}}
+\newcommand{\eean}{\end{eqnarray*}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+\newcommand{\bed}{\begin{itemize}}
+\newcommand{\eed}{\end{itemize}}
+\newcommand{\bs}{\begin{slide}}
+\newcommand{\es}{\end{slide}}
+
+\newcommand{\indep}{\perp \!\!\! \perp}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{prop}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+
+\begin{document}
+
+\title{Title}
+
+\author{
+  Name, Name\thanks{Corresponding author.} \\
+  Department of XXX, XXX, XXX \\
+  \texttt{\{email\}@XXX.ac.kr} \\
+}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+XXX
+\end{abstract}
+
+\section{Introduction}
+\label{sec:1}
+
+\section{Related Work}
+\label{sec:2}
+
+\section{Proposal}
+\label{sec:3}
+
+\subsection{Results}
+\label{sec:4}
+
+\section{Conclusions}
+\label{sec:5}
+
+\bibliographystyle{apalike}
+\bibliography{ref}
+
+\newpage
+\appendix
+\onecolumn
+\section{Appendix}
+
+\subsection{XXX}
+\label{app:1}
+
+\end{document}
